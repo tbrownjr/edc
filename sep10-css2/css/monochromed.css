@@ -1,0 +1,23 @@
+header{
+	font-size: 40px;
+	font-family: 'Oxygen', sans-serif;
+	text-align: center;
+}
+small{
+	font-size: 10px;
+	margin: auto;
+}
+div{
+	text-align: center;
+}
+a{
+	text-decoration: none;
+	border: 20px solid #131313;
+	border-color: #131313;
+	background-color: #131313;
+	border-radius: 50px;
+	display: inline-block;
+}
+.nav{
+	background-color: red;
+}

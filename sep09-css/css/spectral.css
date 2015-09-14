@@ -1,0 +1,13 @@
+header{
+	background-color: gray;
+	height: 50px;
+	margin-top: 20px;
+}
+header a{
+	float: right;
+}
+
+
+header h1{
+	float: left;
+}

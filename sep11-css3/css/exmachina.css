@@ -1,0 +1,17 @@
+h1{
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase; 
+}
+ul{
+	display: inline;
+	float: right;
+}
+ul li{
+	display: inline;
+	
+	padding: 10px;
+	height: 20px;
+}
+ul li a{
+	text-decoration: none;
+}
