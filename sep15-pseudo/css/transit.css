@@ -1,0 +1,55 @@
+h1{
+	display: inline;
+	text-transform: uppercase;
+	font-size: 15px;
+	margin: 50px;
+}
+body{
+	font-family: 'Raleway', helvetica, sans-serif;
+}
+img{
+	float: left;
+}
+nav{
+	float: right;
+}
+nav::before,nav::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: gray; 
+}
+.button{
+	border: 10px solid;
+	border-color: white;
+	color: gray;
+	border-radius: 50%;
+	width: 5px;
+	height: 2px;
+}
+ul li {
+	list-style: none;
+	display: inline-block;
+	text-align: right;
+	padding: 10px;
+}
+section{
+	text-align: center;
+	margin: 200px;
+	text-transform: uppercase; 
+}
+h2{
+	font-size: 50px;
+
+}
+header{
+	background-image: url("../img/transit/img/bokeh_car_lights_bg.jpg");
+	color: white;
+	height: 500px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
