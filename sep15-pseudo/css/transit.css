@@ -18,7 +18,7 @@ nav::before,nav::after{
 	display: block;
 	clear: both;
 }
-a{
+li a{
 	text-decoration: none;
 	text-transform: uppercase;
 	color: gray; 
@@ -27,9 +27,10 @@ a{
 	border: 10px solid;
 	border-color: white;
 	color: gray;
-	border-radius: 50%;
-	width: 5px;
+	border-radius: 35%;
+	width: 20px;
 	height: 2px;
+	background-color: white;
 }
 ul li {
 	list-style: none;
@@ -39,8 +40,21 @@ ul li {
 }
 section{
 	text-align: center;
-	margin: 200px;
+	margin: 110px;
 	text-transform: uppercase; 
+}
+section p{
+	margin: 75px;
+	display: inline-block;
+	color: hsla(209, 12%, 16%, 1);
+}
+section a{
+	padding: 6px;
+	border: 11px solid hsla(195, 64%, 53%, 1);
+	background-color: hsla(195, 64%, 53%, 1);
+	border-radius: 46%;
+	color: white;
+	text-decoration: none;
 }
 h2{
 	font-size: 50px;
@@ -48,8 +62,12 @@ h2{
 }
 header{
 	background-image: url("../img/transit/img/bokeh_car_lights_bg.jpg");
-	color: white;
 	height: 500px;
 	background-repeat: no-repeat;
 	background-size: cover;
+	color: white;
+}
+h3{
+	font-size: 30px;
+	margin: -50px;
 }

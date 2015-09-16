@@ -1,0 +1,81 @@
+body{
+	font-family: sans-serif;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	background-color: hsla(0, 0%, 19%, 1);
+	width: 25vw;
+	color: hsla(0, 0%, 92%, 1);
+}
+li:nth-child(1) figure {
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Lion_waiting_in_Namibia.jpg/250px-Lion_waiting_in_Namibia.jpg");
+}
+li:nth-child(2) figure {
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Tigress_at_Jim_Corbett_National_Park.jpg/220px-Tigress_at_Jim_Corbett_National_Park.jpg");
+}
+li:nth-child(3) figure {
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Cute_Monkey_cropped.jpg/220px-Cute_Monkey_cropped.jpg");
+}
+li:nth-child(4) figure {
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Kangaroo_and_joey03.jpg/220px-Kangaroo_and_joey03.jpg");
+	background-position: center 43%;
+}
+li:nth-child(5) figure {
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/African_Bush_Elephant.jpg/220px-African_Bush_Elephant.jpg");
+	background-position: center 69%;
+}
+li:last-child{
+	border: none;
+}
+li figure{
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 background-position: center;
+}
+li:hover{
+	background-color: hsla(310, 70%, 60%, 1);
+}
+li:hover div{
+	height: 25vw;
+}
+li div{
+	width: 100%;
+	background-color: hsla(0, 0%, 92%, 1);
+	position: relative;
+	height: 0vw;
+	overflow: hidden;
+	transition: height 150ms ease-in-out;
+}
+li{
+	border-bottom:1px solid hsla(0, 0%, 9%, 1);
+	transition: background-color 500ms ease-in-out;
+}
+a{
+	color: hsla(0, 0%, 92%, 1);
+	text-decoration: none;
+	display: block;
+	padding: 20px;
+}
+i{
+	color: inherit;
+	margin-right: 10px;
+	float: left;
+}
+figure{
+	margin: 0;
+	height: 100%;
+}
+figcaption{
+	color: hsla(0, 0%, 19%, 1);
+	position: absolute;
+	bottom: 0;
+	padding: 10px;
+	display: block;
+	width: 100%;
+	left: 0;
+	box-sizing: border-box;
+	text-align: center;
+	font-style: italic;
+	background-color: hsla(0, 0%, 100%, .75);
+}
