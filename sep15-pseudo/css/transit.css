@@ -1,17 +1,22 @@
-h1{
-	display: inline;
-	text-transform: uppercase;
-	font-size: 15px;
-	margin: 50px;
-}
 body{
 	font-family: 'Raleway', helvetica, sans-serif;
+	position: relative;
 }
+header h1{
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 15px;
+	margin: 24px;
+
+}
+
 img{
 	float: left;
 }
 nav{
 	float: right;
+	margin: 2px;
+    font-size: 16px;
 }
 nav::before,nav::after{
 	content: "";
@@ -27,7 +32,7 @@ li a{
 	border: 10px solid;
 	border-color: white;
 	color: gray;
-	border-radius: 35%;
+	border-radius: 35px;
 	width: 20px;
 	height: 2px;
 	background-color: white;
@@ -40,21 +45,26 @@ ul li {
 }
 section{
 	text-align: center;
-	margin: 110px;
+	margin: 80px;
 	text-transform: uppercase; 
 }
 section p{
-	margin: 75px;
+	margin: 40px;
 	display: inline-block;
-	color: hsla(209, 12%, 16%, 1);
+	color: white;
+	font-size: 20px;
 }
 section a{
-	padding: 6px;
-	border: 11px solid hsla(195, 64%, 53%, 1);
-	background-color: hsla(195, 64%, 53%, 1);
-	border-radius: 46%;
-	color: white;
-	text-decoration: none;
+	padding: 16px;
+    border: 5px solid hsl(195, 64%, 53%);
+    background-color: hsl(195, 64%, 53%);
+    border-radius: 50px;
+    display: block;
+    color: hsl(0, 100%, 100%);
+    text-decoration: none;
+    width: 222px;
+    margin-left: 249px;
+    height: 7px;
 }
 h2{
 	font-size: 50px;
@@ -68,6 +78,39 @@ header{
 	color: white;
 }
 h3{
-	font-size: 30px;
-	margin: -50px;
+	font-size: 40px;
+	margin: -25px;
+	color: hsla(0, 0%, 28%, 1);
+	text-transform: lowercase;
+}
+.info p{
+	color: hsla(0, 0%, 58%, 1);
+}
+.one{
+	border: 1px solid;
+	width: 250px;
+    height: 340px;
+    margin: 50px;
+    margin-left: 0px;
+}
+i{
+	border: 1px solid hsl(195, 64%, 53%);
+	background-color: hsl(195, 64%, 53%);
+	border-radius: 50%;
+	width: 100px;
+    height: 100px;
+    margin: 58px;
+    margin-left: -49px;
+}
+.fa-cloud:before {
+    content: "\f0c2";
+    padding-bottom: 35px;
+    color: white;
+    margin: 35px;
+    margin-left: -15px;
+}
+h4{
+}
+.one p{
+
 }
