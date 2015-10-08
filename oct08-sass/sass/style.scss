@@ -1,0 +1,80 @@
+$rand: random(360);
+$randcolor: hsla($rand, 50%, 50%, 1);
+$deg: hue($randcolor);
+
+@mixin div-padding($x){
+	padding: $x;
+}
+
+@mixin insta-border($x, $y, $z){
+	border-width: $y;
+	border-style: $x;
+	border-color: $z;
+	padding: $y 50px 50px;
+	color: $z;
+	text-shadow: 1px -1px 0 darken($z, 30);
+}
+
+$key: hsla(350, 50%, 50%, 1);
+$red: $key;
+
+$orange: adjust-hue($key, 56);
+$organge: lighten(adjust-hue($key, 41), 15);
+
+$yellow: complement(adjust-hue($key, 100));
+$purple: darken(adjust-hue($key, 10), 50);
+$black: adjust-hue($key, 40);
+$blue: adjust-hue($key, 20);
+
+
+main span {
+	display: block;
+	width: 100px;
+	height: 100px;
+	&:nth-of-type(1){
+		@include insta-border(dotted, 5px, $red);
+		&::before{
+			content: '#{$deg}';
+		}
+	}
+	&:nth-of-type(2){
+		@include insta-border(solid, 25px, $black);
+	}
+	&:nth-of-type(3){
+		@include insta-border(double, 10px, $yellow);
+	}
+	&:nth-of-type(4){
+		@include insta-border(inset, 15px, $blue);
+	}
+	&:nth-of-type(5){
+		@include insta-border(solid, 40px, purple);
+	}
+}
+
+//  main span{
+// 	width: 100px;
+// 	height: 100px;
+// 	display: block;
+// 	&:nth-of-type(1){
+// 		background-color:$orange;
+// 		//@include div-padding(20px);
+// 		@include insta-border(dotted, 5px, $red);
+// 		&::before{
+// 			content: "#{$deg}";
+// 		}
+// 	}
+// 	&:nth-of-type(2){
+// 		background-color:$blue;
+// 		//@include div-padding(40px);
+// 		@include insta-border(double, 20px, $black);
+// 	}
+// 	&:nth-of-type(3){
+// 		background-color:$purple;
+// 		@include insta-border(solid, 5px, $purple);
+// 	&:nth-of-type(4){
+// 		background-color:$yellow;
+// 	}
+// 	&:nth-of-type(5){
+// 		background-color:$black;
+// 	}
+// }
