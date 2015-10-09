@@ -1,0 +1,19 @@
+body {
+  background-color: black;
+  color: pink;
+  font-size: 30px;
+}
+
+/*
+Directives:
+@mixins -advanced placeholder (accepts arguments)
+@media - media queries
+@include - @mixinx
+@import - importing css stylesheet
+@extend - % placeholders
+@debug - output to terminale
+
+
+@warn
+@error
+*/

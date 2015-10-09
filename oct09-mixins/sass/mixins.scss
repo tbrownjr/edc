@@ -1,0 +1,63 @@
+$unitless: 14;
+$num: 4em;
+$str:"think";
+$unit: 30px;
+$clr: hsla(0, 100%, 50%, 1);
+$width: 20vw;
+
+
+@debug comparable($unit, $unitless);
+
+$hue: 150;
+$sat: 48%;
+$lum: 78%;
+$alpha: .5;
+
+$color: hsla($hue, $sat, $lum, $alpha);
+$text: darken($color, 20);
+
+%clearfix {
+	&::before, &::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+@mixin theme($bgc, $tc, $fs){
+	@if( unit($fs)  != 'px'){
+		@if( unit($fs) == 'em'){
+			@warn 'You provided an em value';
+		}
+		@if( unit($fs) =='vw'){
+			@warn 'You provided a vw value';
+		}
+		@if( unitless($fs) ){
+			@warn 'please provide a unit of measurement';
+		}
+		//@warn "this value needs to be a px value";
+	}
+	@else {
+		background-color: $bgc;
+		color: $tc;
+		font-size: $fs;		
+	}
+}
+body {
+	@include theme(black, pink, $unit);
+}
+
+/*
+Directives:
+@mixins -advanced placeholder (accepts arguments)
+@media - media queries
+@include - @mixinx
+@import - importing css stylesheet
+@extend - % placeholders
+@debug - output to terminale
+
+
+@warn
+@error
+*/
+
