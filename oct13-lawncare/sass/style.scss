@@ -1,0 +1,203 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+
+
+%clearfix {
+    &::before, &::after{
+            content: "";
+            display: block;
+            clear: both;
+    }
+}
+
+.floats{
+    &.features{
+        @extend %clearfix;
+        padding: 75px 5vw;
+        text-align: center;
+        div{
+            i{
+                font-size: 3em;
+                color: $compcolor;
+                width: 3em;
+                height: 3em;
+                border: 1px solid $compcolor;
+                border-radius: 50%;
+                line-height: 3em;
+                margin-bottom: 40px;
+            }
+            width: 33%;
+            float: left;
+        }
+    }
+    &.promos{
+        @extend %clearfix;
+        padding: 75px 5vw;
+        div{
+            width:25%;
+            float:left;
+        }
+    }
+    .utilnav{
+        background{
+            image: url("../img/patt1.png");
+        }
+
+        @extend %clearfix;
+        h1{
+            float: left;
+            color: $logocolor;
+            margin-bottom: 0;
+        }
+        ul:first-of-type{
+            float: right;
+        }
+        li{
+            float: left;
+            display: inline-block;
+            i{
+                margin: 0 10px;
+                float:left;
+                font-size: 2em;
+                color: $compcolor;
+            }
+            div{
+                float:left;
+            }
+        }
+    }
+    nav{
+
+        background-color: $black;
+        color: $white;
+        li{
+            display: inline-block;
+            font-size: 1.1em;
+            font-weight: 100;            
+            text-transform: uppercase;
+            &:hover{
+                background-color: $keycolor;
+            }
+            a{
+            display: block;
+            padding: 25px 30px;
+            }
+        }
+    }
+    .cta{
+        color: $white;
+        padding: 100px 0;
+        text-align: center;
+        background:{
+            image:url("../img/page-1_slide2.jpg");
+            size: cover;
+            position: center;
+
+            
+        }
+        h2{
+            font-size: 2em;
+            text-transform: uppercase;
+        }
+    }
+}
+.flex{
+        &.features{
+        	display: flex;
+        	justify-content: center;
+        padding: 75px 0vw;
+        text-align: center;
+        div{
+            width: 33%;
+            i{
+            	//display: flex;
+            	//justify-content: center;
+            	//align-items: center;
+            	line-height: 3em;
+                font-size: 3em;
+                color: $compcolor;
+                width: 3em;
+                height: 3em;
+                border: 1px solid $compcolor;
+                border-radius: 50%;
+                margin: 0 auto 40px;
+            }
+
+        }
+    }
+    &.promos{
+        display:flex;
+        justify-content: center;
+        padding: 75px 0vw;
+    div{
+        width:20%;
+    }
+}
+    nav{
+        background-color: $black;
+        color: $white;
+        ul{
+            width: 100%;
+            display: inline-flex;
+            flex-direction:row;
+            justify-content:flex-start;
+        }
+        li{
+                text-align: center;
+                font-size: 1.1em;
+                font-weight: 100;            
+                text-transform: uppercase;
+                &:hover{
+                    background-color: $keycolor;
+                }
+                a{
+                display: block;
+                padding: 25px 30px;
+            }
+        }
+
+    }
+    .utilnav{
+        h1{
+        margin-right: auto;
+        color: $logocolor;
+        margin-bottom: 0;
+        }
+        display: flex;
+        ul{
+            display: flex;
+            li{
+                display:inline-flex;
+                    i{
+        margin: 0 10px;
+        font-size: 2em;
+        color: $compcolor;
+    }
+            }
+
+        }
+    }
+    .cta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 25vw;
+        color: $white;
+        background:{
+        image:url("../img/page-1_slide2.jpg");
+        size: cover;
+        position: center;            
+        }
+        h2{
+            font-size: 2em;
+            text-transform: uppercase;
+            
+        }
+        .btn{
+
+        }
+    }
+}

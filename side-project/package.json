@@ -1,0 +1,21 @@
+{
+  "name": "side-project",
+  "version": "1.0.0",
+  "description": "All files except package.jason included in template.\r Follow all instruction for new projects:",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.9.10",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-browserify": "^0.5.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-util": "^3.0.6"
+  },
+  "devDependencies": {}
+}
