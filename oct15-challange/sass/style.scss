@@ -1,0 +1,57 @@
+@import "reset";
+@import "fontawesome";
+@import "variables";
+
+
+/* sass goes here */
+header{
+	height: 44vw;
+	width: 100%;
+	background-image: url("../img/header-bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+h1{
+	margin-right: 42vw;
+    padding-top: 1vw;
+}
+nav{
+	display: flex;
+    justify-content: flex-end;
+    align-items: center;
+	ul{
+		display: flex;
+    	justify-content: flex-end;
+    	align-items: center;
+    	li{
+    		color: $black;
+    		a{
+    			margin: 2vw;
+    			padding-top: 0vw;
+    		}
+    		.btn-one {
+    			border: 1px solid;
+    			border-radius: 25%;
+    			background-color: hsla(100, 75%, 0%, 1);
+    		}
+    		.btn-one:hover{
+    			background-color: red;
+    		} 	
+    	}
+	 }
+}
+#love{
+	width: 50vw;
+	margin: 0 auto;
+	height: 50vw;
+	text-align: center;
+	padding-top: 15%;
+	.btn-two{
+		border: 1vw solid;
+		border-radius: 20%;
+		border-color: red;
+		background-color: red;
+	}
+}
