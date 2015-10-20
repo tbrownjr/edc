@@ -1,0 +1,49 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+/* sass goes here */
+
+
+.opening{
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	text-transform: uppercase;
+	background:url("../img/pw_maze_black_2X.png");
+	color: white;
+	padding: 20vw;
+	.logo{
+		justify-content: space-between;
+		h1{
+
+		}
+		p{
+		  padding-bottom: 5vw;
+		}
+		.btn{
+			text-decoration: none;
+			border: 1px solid $green;
+			border-radius: 8%;
+			background-color: $green;
+			color: black;
+			padding: 1vw;
+ 		 }	
+	}	
+}
+nav{
+	padding:5vw ;
+	ul{
+		flex-direction: row;
+		display: flex;
+		justify-content:space-between;
+		li{
+		  display: flex;
+		  align-items: flex-start;
+		  text-transform: uppercase;  
+		}
+	}
+}
+
+
+
