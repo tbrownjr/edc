@@ -1,0 +1,434 @@
+body {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+/* sass goes here */
+main {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+main div {
+  position: relative;
+  font-family: sans-serif;
+  padding: 10px;
+  width: 33.3333%;
+  box-sizing: border-box;
+  /*&:nth-of-type(odd){
+  	background-color: hsla(0, 0%, 0%, .10);
+  }
+  &:nth-of-type(even){
+  	background-color: hsla(0, 0%, 0%, .05);
+  }*/
+}
+main div span {
+  display: block;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+main div img {
+  float: left;
+  margin-right: 10px;
+}
+
+div::before {
+  content: '';
+  display: block;
+  width: 3em;
+  height: 3em;
+  background-color: white;
+  border-radius: 0 0 0 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+div::after {
+  display: block;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  line-height: 2em;
+  font-size: 1.25em;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+div:nth-child(1) {
+  background-color: rgba(184, 122, 122, 0.5);
+  border-color: rgba(184, 122, 122, 0.5);
+}
+div:nth-child(1) span:first-of-type::before {
+  background-color: rgba(184, 122, 122, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(2) {
+  background-color: rgba(184, 132, 122, 0.5);
+  border-color: rgba(184, 132, 122, 0.5);
+}
+div:nth-child(2) span:first-of-type::before {
+  background-color: rgba(184, 132, 122, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(3) {
+  background-color: rgba(184, 141, 122, 0.5);
+  border-color: rgba(184, 141, 122, 0.5);
+}
+div:nth-child(3) span:first-of-type::before {
+  background-color: rgba(184, 141, 122, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(4) {
+  background-color: rgba(184, 150, 122, 0.5);
+  border-color: rgba(184, 150, 122, 0.5);
+}
+div:nth-child(4) span:first-of-type::before {
+  background-color: rgba(184, 150, 122, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(5) {
+  background-color: rgba(184, 159, 122, 0.5);
+  border-color: rgba(184, 159, 122, 0.5);
+}
+div:nth-child(5) span:first-of-type::before {
+  background-color: rgba(184, 159, 122, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(6) {
+  background-color: rgba(184, 168, 122, 0.5);
+  border-color: rgba(184, 168, 122, 0.5);
+}
+div:nth-child(6) span:first-of-type::before {
+  background-color: rgba(184, 168, 122, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(7) {
+  background-color: rgba(184, 177, 122, 0.5);
+  border-color: rgba(184, 177, 122, 0.5);
+}
+div:nth-child(7) span:first-of-type::before {
+  background-color: rgba(184, 177, 122, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(8) {
+  background-color: rgba(181, 184, 122, 0.5);
+  border-color: rgba(181, 184, 122, 0.5);
+}
+div:nth-child(8) span:first-of-type::before {
+  background-color: rgba(181, 184, 122, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(9) {
+  background-color: rgba(171, 184, 122, 0.5);
+  border-color: rgba(171, 184, 122, 0.5);
+}
+div:nth-child(9) span:first-of-type::before {
+  background-color: rgba(171, 184, 122, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(10) {
+  background-color: rgba(162, 184, 122, 0.5);
+  border-color: rgba(162, 184, 122, 0.5);
+}
+div:nth-child(10) span:first-of-type::before {
+  background-color: rgba(162, 184, 122, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(11) {
+  background-color: rgba(153, 184, 122, 0.5);
+  border-color: rgba(153, 184, 122, 0.5);
+}
+div:nth-child(11) span:first-of-type::before {
+  background-color: rgba(153, 184, 122, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(12) {
+  background-color: rgba(144, 184, 122, 0.5);
+  border-color: rgba(144, 184, 122, 0.5);
+}
+div:nth-child(12) span:first-of-type::before {
+  background-color: rgba(144, 184, 122, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(13) {
+  background-color: rgba(135, 184, 122, 0.5);
+  border-color: rgba(135, 184, 122, 0.5);
+}
+div:nth-child(13) span:first-of-type::before {
+  background-color: rgba(135, 184, 122, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(14) {
+  background-color: rgba(125, 184, 122, 0.5);
+  border-color: rgba(125, 184, 122, 0.5);
+}
+div:nth-child(14) span:first-of-type::before {
+  background-color: rgba(125, 184, 122, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(15) {
+  background-color: rgba(122, 184, 129, 0.5);
+  border-color: rgba(122, 184, 129, 0.5);
+}
+div:nth-child(15) span:first-of-type::before {
+  background-color: rgba(122, 184, 129, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(16) {
+  background-color: rgba(122, 184, 138, 0.5);
+  border-color: rgba(122, 184, 138, 0.5);
+}
+div:nth-child(16) span:first-of-type::before {
+  background-color: rgba(122, 184, 138, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(17) {
+  background-color: rgba(122, 184, 147, 0.5);
+  border-color: rgba(122, 184, 147, 0.5);
+}
+div:nth-child(17) span:first-of-type::before {
+  background-color: rgba(122, 184, 147, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(18) {
+  background-color: rgba(122, 184, 156, 0.5);
+  border-color: rgba(122, 184, 156, 0.5);
+}
+div:nth-child(18) span:first-of-type::before {
+  background-color: rgba(122, 184, 156, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(19) {
+  background-color: rgba(122, 184, 165, 0.5);
+  border-color: rgba(122, 184, 165, 0.5);
+}
+div:nth-child(19) span:first-of-type::before {
+  background-color: rgba(122, 184, 165, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(20) {
+  background-color: rgba(122, 184, 174, 0.5);
+  border-color: rgba(122, 184, 174, 0.5);
+}
+div:nth-child(20) span:first-of-type::before {
+  background-color: rgba(122, 184, 174, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(21) {
+  background-color: rgba(122, 184, 184, 0.5);
+  border-color: rgba(122, 184, 184, 0.5);
+}
+div:nth-child(21) span:first-of-type::before {
+  background-color: rgba(122, 184, 184, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(22) {
+  background-color: rgba(122, 174, 184, 0.5);
+  border-color: rgba(122, 174, 184, 0.5);
+}
+div:nth-child(22) span:first-of-type::before {
+  background-color: rgba(122, 174, 184, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(23) {
+  background-color: rgba(122, 165, 184, 0.5);
+  border-color: rgba(122, 165, 184, 0.5);
+}
+div:nth-child(23) span:first-of-type::before {
+  background-color: rgba(122, 165, 184, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(24) {
+  background-color: rgba(122, 156, 184, 0.5);
+  border-color: rgba(122, 156, 184, 0.5);
+}
+div:nth-child(24) span:first-of-type::before {
+  background-color: rgba(122, 156, 184, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(25) {
+  background-color: rgba(122, 147, 184, 0.5);
+  border-color: rgba(122, 147, 184, 0.5);
+}
+div:nth-child(25) span:first-of-type::before {
+  background-color: rgba(122, 147, 184, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(26) {
+  background-color: rgba(122, 138, 184, 0.5);
+  border-color: rgba(122, 138, 184, 0.5);
+}
+div:nth-child(26) span:first-of-type::before {
+  background-color: rgba(122, 138, 184, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(27) {
+  background-color: rgba(122, 129, 184, 0.5);
+  border-color: rgba(122, 129, 184, 0.5);
+}
+div:nth-child(27) span:first-of-type::before {
+  background-color: rgba(122, 129, 184, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(28) {
+  background-color: rgba(125, 122, 184, 0.5);
+  border-color: rgba(125, 122, 184, 0.5);
+}
+div:nth-child(28) span:first-of-type::before {
+  background-color: rgba(125, 122, 184, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(29) {
+  background-color: rgba(135, 122, 184, 0.5);
+  border-color: rgba(135, 122, 184, 0.5);
+}
+div:nth-child(29) span:first-of-type::before {
+  background-color: rgba(135, 122, 184, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(30) {
+  background-color: rgba(144, 122, 184, 0.5);
+  border-color: rgba(144, 122, 184, 0.5);
+}
+div:nth-child(30) span:first-of-type::before {
+  background-color: rgba(144, 122, 184, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(31) {
+  background-color: rgba(153, 122, 184, 0.5);
+  border-color: rgba(153, 122, 184, 0.5);
+}
+div:nth-child(31) span:first-of-type::before {
+  background-color: rgba(153, 122, 184, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(32) {
+  background-color: rgba(162, 122, 184, 0.5);
+  border-color: rgba(162, 122, 184, 0.5);
+}
+div:nth-child(32) span:first-of-type::before {
+  background-color: rgba(162, 122, 184, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(33) {
+  background-color: rgba(171, 122, 184, 0.5);
+  border-color: rgba(171, 122, 184, 0.5);
+}
+div:nth-child(33) span:first-of-type::before {
+  background-color: rgba(171, 122, 184, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(34) {
+  background-color: rgba(181, 122, 184, 0.5);
+  border-color: rgba(181, 122, 184, 0.5);
+}
+div:nth-child(34) span:first-of-type::before {
+  background-color: rgba(181, 122, 184, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(35) {
+  background-color: rgba(184, 122, 177, 0.5);
+  border-color: rgba(184, 122, 177, 0.5);
+}
+div:nth-child(35) span:first-of-type::before {
+  background-color: rgba(184, 122, 177, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(36) {
+  background-color: rgba(184, 122, 168, 0.5);
+  border-color: rgba(184, 122, 168, 0.5);
+}
+div:nth-child(36) span:first-of-type::before {
+  background-color: rgba(184, 122, 168, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(37) {
+  background-color: rgba(184, 122, 159, 0.5);
+  border-color: rgba(184, 122, 159, 0.5);
+}
+div:nth-child(37) span:first-of-type::before {
+  background-color: rgba(184, 122, 159, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(38) {
+  background-color: rgba(184, 122, 150, 0.5);
+  border-color: rgba(184, 122, 150, 0.5);
+}
+div:nth-child(38) span:first-of-type::before {
+  background-color: rgba(184, 122, 150, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(39) {
+  background-color: rgba(184, 122, 141, 0.5);
+  border-color: rgba(184, 122, 141, 0.5);
+}
+div:nth-child(39) span:first-of-type::before {
+  background-color: rgba(184, 122, 141, 0.5);
+  z-index: 0;
+}
+
+div:nth-child(40) {
+  background-color: rgba(184, 122, 132, 0.5);
+  border-color: rgba(184, 122, 132, 0.5);
+}
+div:nth-child(40) span:first-of-type::before {
+  background-color: rgba(184, 122, 132, 0.5);
+  z-index: 0;
+}

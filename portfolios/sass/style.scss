@@ -4,46 +4,122 @@
 
 /* sass goes here */
 
-
+body{
+	font-family: open sans,sans-serif;
+}
 .opening{
 	display: flex;
-	justify-content: space-between;
-	text-align: center;
-	text-transform: uppercase;
+	justify-content: center;
 	background:url("../img/pw_maze_black_2X.png");
 	color: white;
-	padding: 20vw;
-	.logo{
-		justify-content: space-between;
+	text-align: center;
+	padding: 15vw;
+	.logo{ 
+		justify-content: center;
+		align-items: center;
+		img{
+			width: 10vw;
+		}
 		h1{
-
+		  justify-content: center;
+		  align-items: center;
+		  font-size: 3em;
 		}
 		p{
 		  padding-bottom: 5vw;
+		  color: $litegray;
+		  text-transform: uppercase;
 		}
 		.btn{
 			text-decoration: none;
 			border: 1px solid $green;
-			border-radius: 8%;
+			border-radius: 6%;
 			background-color: $green;
-			color: black;
-			padding: 1vw;
- 		 }	
+			color: white;
+			padding: 1.5vw 4vw;
+			font-size: 1em;
+ 		 }
+ 		 .btn:hover{
+ 		 	background: white;
+ 		 	color: $green;
+ 		 }
 	}	
 }
 nav{
-	padding:5vw ;
+	padding:1vw ;
+	height: 4vw;
+	margin: 0 15vw 0 15vw;
 	ul{
 		flex-direction: row;
 		display: flex;
-		justify-content:space-between;
+		justify-content:space-around;
+		img{
+			width: 5vw;
+			height: 5vw;
+		}
 		li{
 		  display: flex;
 		  align-items: flex-start;
-		  text-transform: uppercase;  
+		  text-transform: uppercase;
+		  padding-top: 1vw;
+		  font-size: .95em;
+		  font-weight: 700;
+		  a {
+		  	color: black;
+		  } 
+	   }
+	}
+}
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.skills {
+	text-align: center;
+	h2{
+		font-size: 2em;
+		font-weight: 800;
+		padding-top: 5vw; 
+		text-transform: uppercase;
+		margin: 0;
+	}
+	p{
+		text-transform: uppercase;
+		color: $litegray;
+		padding-top: 1vw;
+		margin-bottom: 3vw;
+		font-size: 1em
+
+	}
+	img {
+		float: right;
+	}
+}
+.skill {
+	display: flex;
+	text-align: left;
+	padding-left: 10vw;
+	margin-bottom: 0;
+	i {
+		font-size: 2.5em;
+		padding: 0 1vw;	
+	}
+	span {
+		width: 30%;
+		h3 {
+			text-transform: uppercase;
+			font-size: 1em;
+			padding-bottom: 0;
+			margin-bottom: 7px;
+		}
+		p {
+			margin-bottom: 2vw;
+			font-size: .75em;
+			padding: 0;
 		}
 	}
 }
-
 
 

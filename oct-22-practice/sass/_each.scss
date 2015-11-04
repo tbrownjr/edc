@@ -1,0 +1,24 @@
+$animals: lion monkey pig dog cat gorila panther zebra cow fox;
+$color: (360 / length($animals));
+@debug $color;
+@debug length($animals);
+
+@each $animal in $animals {
+	$i: index($animals, $animal);
+	$hue: ($color * $i) - $color; 
+	ul li:nth-child(#{$i}){
+		background-color: hsla($hue, 40%, 60%, 1);
+		&::before{
+			content:"#{$animal}";
+		}
+	}
+}
+
+@for $i from 1 to 5 {
+	ol li:nth-child(#{$i}) {
+		font-size: 1em * $i;
+		&::before{
+			content: '#{$i}';
+		}
+	}
+}

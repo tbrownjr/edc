@@ -1,0 +1,41 @@
+@import "reset";
+@import "fontawesome";
+@import "variables";
+
+/* sass goes here */
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	h1{
+		margin-right: auto;	}
+	ul{
+		display: inline-flex;
+		a{
+			padding: 0 10px;
+		}
+	}
+}
+main, #list{
+	display: flex;
+	flex-wrap: wrap;
+}
+section{
+	box-sizing: border-box;
+	width: 50%;
+	padding: 10px;
+	img{
+		float: right;
+		width: 25%;
+		height: auto;
+	}
+}
+@media screen and (max-width: 34em){
+	main, #list{
+		flex-direction: column;
+	}
+	section{
+		width: 100%;
+	}
+}
+

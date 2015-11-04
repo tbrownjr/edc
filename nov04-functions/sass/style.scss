@@ -1,0 +1,17 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+/* sass goes here */
+
+html, body {
+	height: 100%;
+}
+form{
+	text-align: center;
+	border: 1px solid hsla(40, 20%, 50%, 1);
+	background-color: black;
+	div{
+		display: flex;
+	}
+}
