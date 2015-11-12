@@ -16,6 +16,15 @@ h1, h2, h3, h4, h5, h6, p {
   margin-top: 0;
 }
 
+#btn2 {
+  margin-bottom: 7vw;
+  border: solid 1vw #009e2d;
+  background-color: #009e2d;
+  color: white;
+  text-transform: uppercase;
+  padding: 1vw 5vw;
+}
+
 /*!
  *  Font Awesome 4.4.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2558,168 +2567,83 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* sass goes here */
 body {
-  font-family: open sans,sans-serif;
+  font-family: 'Varela', sans-serif;
 }
-
-.opening {
+body header {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: url("../img/pw_maze_black_2X.png");
-  color: white;
-  text-align: center;
-  padding: 15vw;
-}
-.opening .logo {
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.opening .logo img {
-  width: 10vw;
-}
-.opening .logo h1 {
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 3em;
-}
-.opening .logo p {
-  padding-bottom: 5vw;
-  color: #b0b5b5;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #333333;
   text-transform: uppercase;
-}
-.opening .logo .btn {
-  text-decoration: none;
-  border: 1px solid #7ac374;
-  border-radius: 6%;
-  background-color: #7ac374;
-  color: white;
-  padding: 1.5vw 4vw;
-  font-size: 1em;
-}
-.opening .logo .btn:hover {
-  background: white;
-  color: #7ac374;
-}
-
-nav {
-  padding: 1vw;
-  height: 4vw;
-  margin: 0 15vw 0 15vw;
-}
-nav ul {
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-}
-nav ul img {
-  width: 5vw;
-  height: 5vw;
-}
-nav ul li {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  text-transform: uppercase;
-  padding-top: 1vw;
-  font-size: .95em;
-  font-weight: 700;
-}
-nav ul li a {
-  color: black;
-}
-
-hr {
-  border: 0;
-  height: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.skills {
-  text-align: center;
-}
-.skills h2 {
-  font-size: 2em;
-  font-weight: 800;
-  padding-top: 5vw;
-  text-transform: uppercase;
-  margin: 0;
-  position: static;
-}
-.skills p {
-  text-transform: uppercase;
-  color: #b0b5b5;
-  padding-top: 1vw;
-  margin-bottom: 3vw;
-  font-size: 1em;
-}
-.skills img {
-  float: right;
-  height: auto;
-  right: 0;
-}
-.skills div {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  text-align: left;
-  margin-bottom: 0;
-  position: relative;
-}
-.skills div i {
-  font-size: 2.5em;
-  padding: 1vw;
-  position: relative;
-  float: left;
-}
-.skills div span {
-  display: flex-inline;
-}
-.skills div span h3 {
-  text-transform: uppercase;
-  font-size: 1em;
-  padding-bottom: 0;
-  margin-bottom: 7px;
-}
-.skills div span p {
-  margin-bottom: 2vw;
   font-size: .75em;
-  padding: 0;
+  color: white;
+  position: relative;
 }
-
-#info {
+body header h1 {
+  margin-top: 10px;
+}
+body header nav {
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+body header nav ul {
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 10px;
+  right: 0;
+  top: 20vw;
+}
+body header nav ul li {
+  display: inline;
+  padding: 5px;
+}
+body header nav ul #btn {
+  border: solid 1vw #009e2d;
+  background-color: #009e2d;
+  color: white;
+  text-transform: uppercase;
+}
+body .top {
+  text-align: center;
+  padding-top: 100px;
+  background-color: #212121;
+}
+body .top h2 {
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  margin: 0;
+}
+body .top p {
+  font-size: 1.5em;
+  color: #969696;
+  margin-bottom: 7vw;
+}
+body section {
+  text-align: center;
+}
+body section span {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+body section span div {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  border: 1px solid #969696;
+  margin: 1vw;
 }
-
-@media (max-width: 600px) {
-  img {
-    width: 50vw;
-  }
+body section span div i {
+  font-size: 10em;
+  color: #969696;
+}
+body section span div p {
+  font-size: 1em;
+  color: #969696;
 }

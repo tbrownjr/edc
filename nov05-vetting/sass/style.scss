@@ -1,0 +1,45 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+/* sass goes here */
+
+html, body{
+	height: 100%;
+	font-size: 100%;
+	font-family: sans-serif;
+	font-weight: 200;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+body{
+	flex-direction: column;
+}
+
+main{
+	height: 100%;
+	div{
+		display: flex;
+		p:last-child {
+			color: red;
+		}
+	}
+}
+textarea {
+	font-size: 1.5em;
+	min-height: 50%;
+}
+.cta{
+	height: 35vw;
+	width: 100%;
+	background: {
+		image: url('http://placeholder.it/350x150');
+		size: cover;
+		position: center; 
+	}
+}
+footer{
+	background-color: darkgray;
+	color: white;
+}

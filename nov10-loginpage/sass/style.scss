@@ -1,0 +1,55 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+/* sass goes here */
+
+$white: hsla(0, 0%, 100%, 1);
+$whitelite: lighten($white, 10);
+$whitedark: darken($white, 10);
+$btn: hsla(180, 50%, 50%, 1);
+$btnlite: lighten($btn, 10);
+$btndark: dark($btn, 10);
+$red: hsla(12, 90%, 25%, 1);
+$gold: hsla(37, 100%, 64%, 1);
+
+
+html, body {
+    height: 100%;
+}
+
+#loginbox {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	background: linear-gradient($red, $gold);
+	padding: 20px;
+	width: 300px;
+	border: {
+		width: 1px;
+	}
+	form{
+		display: flex;
+		flex-direction: column;
+	}
+	label {
+		margin-bottom: 20px; 
+	}
+	input {
+		font-size: 1.25em;
+		line-height: 1.5em;
+		padding: 5px;
+		border: {
+			width: 1px;
+			style: solid;
+			color: lightgray;
+			radius:4px 
+		}
+		&[type='submit']{
+			align-self: flex-start;
+			background-image: linear-gradient($btnlite, $btn);
+			border-color: $btndark; 
+			color: $whitelite;
+		}
+	}
+}

@@ -1,0 +1,78 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+/* sass goes here */
+body{
+	font-family: 'Varela', sans-serif;
+
+	header{
+		display: flex;
+		justify-content: space-between;
+		background-color: hsla(0, 0%, 20%, 1);
+		text-transform: uppercase;
+		font-size: .75em;
+		color: white;
+		position: relative;
+		h1{
+			margin-top: 10px;
+		}
+		nav{
+		    justify-content: flex-end;
+			ul{
+				flex-direction: row;
+				margin-top: 10px;
+				right: 0;
+				top: 20vw;
+				
+
+				li{
+					display: inline;
+					padding: 5px;
+				}
+				#btn{
+					border: solid 1vw hsla(137, 100%, 31%, 1);
+					background-color: hsla(137, 100%, 31%, 1);
+					color: white;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+	.top{
+		text-align: center;
+		padding-top: 100px;
+		background-color: hsla(0, 0%, 13%, 1);
+		h2{
+			font-size: 2em;
+			text-transform: uppercase;
+			color: white;
+			margin: 0;
+		}
+		p{
+			font-size: 1.5em;
+			color: hsla(0, 0%, 59%, 1);
+			margin-bottom: 7vw;
+		}
+	}
+	section{
+		text-align: center;
+		span{
+			display: flex;
+			div{
+				flex-direction: column;
+				border: 1px solid hsla(0, 0%, 59%,1);
+				margin: 1vw;
+				i{
+					font-size: 10em;
+					color: hsla(0, 0%, 59%,1);
+				}
+				p{
+					font-size: 1em;
+					color: hsla(0, 0%, 59%,1);
+				}
+
+			}
+		}
+	}
+}
